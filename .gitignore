@@ -1,0 +1,14 @@
+# Generated simulation results
+output/
+
+# MATLAB generated files
+*.asv
+*.autosave
+*.m~
+slprj/
+codegen/
+
+# Operating-system noise
+Thumbs.db
+.DS_Store
+

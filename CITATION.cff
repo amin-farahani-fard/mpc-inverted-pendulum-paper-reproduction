@@ -1,0 +1,28 @@
+cff-version: 1.2.0
+message: "If you use this reproduction, please cite the original paper and this repository."
+title: "Multirate MPC Paper Reproduction for an Inverted-Pendulum Robot"
+type: software
+authors:
+  - family-names: "Farahani Fard"
+    given-names: "Amin"
+repository-code: "https://github.com/amin-farahani-fard/mpc-inverted-pendulum-paper-reproduction"
+keywords:
+  - model predictive control
+  - inverted pendulum
+  - multirate control
+  - MATLAB
+references:
+  - type: article
+    title: "Model Predictive Control for an Inverted-pendulum Robot with Time-varying Constraints"
+    authors:
+      - family-names: "Ohhira"
+        given-names: "Takashi"
+      - family-names: "Shimada"
+        given-names: "Akira"
+    journal: "IFAC-PapersOnLine"
+    volume: "50"
+    issue: "1"
+    start: "776"
+    end: "781"
+    year: 2017
+    doi: "10.1016/j.ifacol.2017.08.252"
