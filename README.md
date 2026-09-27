@@ -33,35 +33,6 @@ the short direction, tilt, and torque transients.
 | Prediction horizon | 10 |
 | Control horizon | 5 |
 
-## Control Architecture
-
-```text
-Reference trajectory
-        |
-        v
-+-----------------------+       updated every 0.08 s
-| Constrained MPC / QP  |-----------------------------+
-| - tracking objective  |                             |
-| - time-varying vmax   |                             v
-| - tilt constraints    |                    +----------------+
-| - actual torque bound |                    | MPC command    |
-+-----------------------+                    +-------+--------+
-                                                        |
-Measured state ---> Digital LQ feedback (0.01 s) -------(-)
-                                                        |
-                                                        v
-                                             Left/right wheel torque
-                                                        |
-                                                        v
-                                         Six-state IP robot model
-```
-
-The actual actuator command is constrained after combining the MPC output with
-the digital LQ feedback:
-
-```text
-u(k) = u_mpc(k) - F_d x(k)
-```
 
 ## Implemented Features
 
